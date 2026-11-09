@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Account />
+  <Password />
+  <Prefix />
+  <PortalUrl>http://10.0.100.3/</PortalUrl>
+  <Daily>true</Daily>
+  <Periodic>true</Periodic>
+  <Enabled>false</Enabled>
+  <Times>07:00</Times>
+  <Windows>07:00-23:59</Windows>
+  <Interval>5</Interval>
+</Settings>

@@ -1,0 +1,23 @@
+name: Windows build and tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build, test and package without credentials
+        shell: powershell
+        run: ./package.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: campus-reconnect-windows
+          path: |
+            dist/*.zip
+            dist/SHA256SUMS.txt

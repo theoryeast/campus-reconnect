@@ -1,0 +1,25 @@
+# Build and release output
+out/
+dist/
+*.exe
+*.dll
+*.pdb
+*.zip
+*.png
+# Local credentials, diagnostics, downloaded portal pages and runtime state
+设置.xml*
+运行日志.txt*
+诊断.txt
+Portal诊断.txt
+真实重连测试.txt
+测试结果.txt
+会话修复时间.txt
+守护恢复记录.txt
+job-*.txt
+*.html
+*.log
+*.user
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
