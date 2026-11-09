@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $PSScriptRoot
 & (Join-Path $PSScriptRoot 'build.ps1') -Test
 $dist = Join-Path $PSScriptRoot 'dist'
