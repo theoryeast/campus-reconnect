@@ -11,6 +11,4 @@ foreach ($name in @('README.md','LICENSE','settings.example.xml')) { Copy-Item -
 $version = [Diagnostics.FileVersionInfo]::GetVersionInfo((Join-Path $stage 'CampusReconnect.exe')).FileVersion
 $zip = Join-Path $dist "CampusReconnect-v$version-win-x64.zip"
 Compress-Archive -LiteralPath (Get-ChildItem -LiteralPath $stage -File).FullName -DestinationPath $zip -Force
-$hash = (Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash.ToLowerInvariant()
-"$hash  $([IO.Path]::GetFileName($zip))" | Set-Content -LiteralPath (Join-Path $dist 'SHA256SUMS.txt') -Encoding ascii
 Write-Output $zip

@@ -20,4 +20,3 @@ jobs:
           name: campus-reconnect-windows
           path: |
             dist/*.zip
-            dist/SHA256SUMS.txt
