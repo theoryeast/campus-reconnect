@@ -50,7 +50,7 @@ Windows 图形界面的 Dr.COM Portal 自动重连工具。支持每日多个时
 .\package.ps1
 ```
 
-使用系统 .NET Framework C# 编译器，无第三方 NuGet 依赖。输出位于 `out/`，发布 ZIP 与 SHA-256 校验值位于 `dist/`。打包使用明确文件清单，不读取工作目录里的个人配置或历史日志。
+使用系统 .NET Framework C# 编译器，无第三方 NuGet 依赖。输出位于 `out/`，发布 ZIP 位于 `dist/`。打包使用明确文件清单，不读取工作目录里的个人配置或历史日志。
 
 ## 测试与诊断
 
